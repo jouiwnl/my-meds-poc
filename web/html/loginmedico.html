@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMeds | Login - Médico</title>
+    <link rel="stylesheet" href="..\css\global.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controllers/loginMedicoController.js"></script>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <h1>MyMeds</h1>
+        <p>O melhor contato médico-paciente</p>
+      </header>
+
+      <div class="bluebox">
+        <form class="containerForm">
+          <ul class="lista-numerica">
+            <li>1</li>
+            <li>2</li>
+          </ul>
+
+          <div class="Formlabel">
+            <label for="crm">Digite seu CRM:</label>
+            <label for="senha">Senha:</label>
+          </div>
+
+          <div class="Forminput">
+            <input type="text" id="crm" name="crm" placeholder="CRM" required />
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+              required
+            />
+            
+            <button class="acesso" onclick="handleLoginInputs(event)">Acessar sistema</button>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <h2 class="footer-heading">Fale conosco:</h2>
+          <input
+            type="email"
+            class="footer-input"
+            placeholder="Email"
+            required
+          />
+          <div class="textarea-button">
+            <textarea
+              class="footer-textarea"
+              placeholder="Mensagem..."
+            ></textarea>
+            <button type="submit" class="footer-button">Enviar</button>
+          </div>
+          <p class="footer-text">
+            &copy; 2023 MyMeds. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

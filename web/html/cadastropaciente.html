@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMeds | Cadastro</title>
+    <link rel="stylesheet" href="..\css\global.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controllers/cadastroPacienteController.js"></script>
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <h1>MyMeds</h1>
+        <p>O melhor contato médico-paciente</p>
+      </header>
+
+      <div class="bluebox-1">
+        <h2 class="choice-img">Cadastre-se:</h2>
+        <form class="containerForm">
+          <ul class="lista-numerica">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+          <div class="Formlabel">
+            <label for="nome">Digite seu nome:</label>
+            <label for="email">Digite seu e-mail:</label>
+            <label for="senha">Senha:</label>
+            <label for="crm">CRM do médico:</label>
+          </div>
+
+          <div class="Forminput">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@mymeds.com"
+            />
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Senha"
+            />
+
+            <input
+              type="text"
+              id="crm" 
+              name="crm" 
+              placeholder="CRM" 
+            />
+            <button class="acesso" onclick="handlePatientRegistrationInputs(event)">Finalizar</button>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <h2 class="footer-heading">Fale conosco:</h2>
+          <input
+            type="email"
+            class="footer-input"
+            placeholder="Email"
+            required
+            id="emailFC"></input>
+          />
+          <div class="textarea-button">
+            <textarea
+              class="footer-textarea"
+              placeholder="Mensagem..."
+            ></textarea>
+            <button type="submit" class="footer-button">Enviar</button>
+          </div>
+          <p class="footer-text">
+            &copy; 2023 MyMeds. Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
